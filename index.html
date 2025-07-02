@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesum | AI Engineer</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    .skill-card {
+      transition: all 0.3s ease;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #1e293b;
+      text-align: center;
+      font-size: 1rem;
+      max-width: 200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px #6366f1;
+    }
+    .glow-border {
+      box-shadow: 0 0 10px #6366f1, 0 0 20px rgba(99, 102, 241, 0.3);
+    }
+    .typewriter {
+      overflow: hidden;
+      display: inline-block;
+      white-space: nowrap;
+      border-right: 3px solid #6366f1;
+      animation: typing 2.8s steps(12, end), blink-caret 0.75s step-end 3;
+      max-width: fit-content;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 8.5ch }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #6366f1; }
+    }
+    .dark-mode body {
+      background-color: #f8fafc;
+      color: #020617;
+    }
+  </style>
+</head>
+<body class="min-h-screen" onload="AOS.init()">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#020617] shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#hero" class="text-2xl font-bold text-white flex items-center space-x-2">
+        <span class="text-[#6366f1]">&lt;</span>
+        <span class="font-['Pacifico']">Mesum</span>
+        <span class="text-[#6366f1]">/&gt;</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#hero" class="text-white hover:text-[#6366f1]">Home</a>
+        <a href="#skills" class="text-white hover:text-[#6366f1]">Skills</a>
+        <a href="#projects" class="text-white hover:text-[#6366f1]">Projects</a>
+        <a href="#testimonials" class="text-white hover:text-[#6366f1]">Testimonials</a>
+        <a href="#contact" class="text-white hover:text-[#6366f1]">Contact</a>
+        <button onclick="toggleTheme()" class="text-white text-xl"><i class="ri-sun-line"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center justify-center px-6 pt-32">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          <span class="block mb-2">Hi there,</span>
+          <span class="block text-[#6366f1] typewriter">I'm Mesum</span>
+        </h1>
+        <p class="text-lg sm:text-xl mb-6 text-gray-300">
+          <span class="block text-[#a855f7] font-medium mb-1">Brand Ambassador</span>
+          A 19-year-old <span class="text-[#6366f1] font-semibold">AI Engineer</span> passionate about creating elegant solutions to complex problems.
+          <br />
+          
+        </p>
+        <div class="flex gap-4">
+          <a href="#projects" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">View My Work</a>
+          <a href="Mesum-Resume.pdf" download class="px-6 py-3 border border-[#6366f1] text-[#6366f1] rounded-md hover:bg-[#6366f1]/10">Download Resume</a>
+        </div>
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-white text-xl hover:text-[#6366f1]"><i class="ri-github-line"></i></a>
+          <a href="#" class="text-white text-xl hover:text-[#6366f1]"><i class="ri-linkedin-line"></i></a>
+          <a href="#" class="text-white text-xl hover:text-[#6366f1]"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+      <div class="flex justify-center" data-aos="fade-left">
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-br from-[#6366f1] to-[#a855f7] glow-border">
+          <div class="absolute inset-2 bg-[#020617] rounded-full overflow-hidden">
+            <img src="https://i.postimg.cc/g0jMPXtn/Whats-App-Image-2025-07-01-at-14-29-23-73c198ed.jpg" alt="Mesum" class="w-full h-full object-cover object-center rounded-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-[#0f172a] px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold relative inline-block">Skills</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center">
+        <div class="skill-card" data-aos="zoom-in"><i class="ri-code-box-line text-2xl text-[#6366f1] mb-2"></i><p>C++</p></div>
+        <div class="skill-card" data-aos="zoom-in"><i class="ri-terminal-line text-2xl text-[#6366f1] mb-2"></i><p>C</p></div>
+        <div class="skill-card" data-aos="zoom-in"><i class="ri-global-line text-2xl text-[#3b82f6] mb-2"></i><p>Web Developer</p></div>
+        <div class="skill-card" data-aos="zoom-in"><i class="ri-user-star-line text-2xl text-[#a855f7] mb-2"></i><p>Brand Ambassador</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-[#020617]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold">Projects</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">AI Assistant App</h3>
+          <p class="text-gray-400">A smart assistant powered by GPT API with voice and text interface.</p>
+        </div>
+        <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-400">Built this portfolio using Tailwind CSS with modern UI and effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-6 bg-[#0f172a]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-10">Testimonials</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
+          <p class="text-gray-300 italic">“Mesum is one of the most driven students I’ve ever taught. His passion is inspiring.”</p>
+          <p class="text-sm text-gray-500 mt-4">– Instructor</p>
+        </div>
+        <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
+          <p class="text-gray-300 italic">“A fantastic designer and developer — always delivers more than expected!”</p>
+          <p class="text-sm text-gray-500 mt-4">– Fellow C++ Programmer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-[#020617]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-10">Contact Me</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="space-y-6 max-w-xl mx-auto">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
+        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-[#1e293b] text-white"></textarea>
+        <button type="submit" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
