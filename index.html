@@ -166,13 +166,22 @@
   <section id="contact" class="py-20 px-6 bg-[#020617]">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl sm:text-4xl font-bold mb-10">Contact Me</h2>
-      <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6 max-w-xl mx-auto">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
-        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-[#1e293b] text-white"></textarea>
-        <input type="text" name="_gotcha" style="display:none" />
-        <button type="submit" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">Send Message</button>
-      </form>
+      <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xyzjaony"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
   </section>
 
