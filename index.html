@@ -164,26 +164,22 @@
 
   <!-- Contact Section -->
   <section id="contact" class="py-20 px-6 bg-[#020617]">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-10">Contact Me</h2>
-      <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xyzjaony"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    </div>
-  </section>
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">Contact Me</h2>
+
+    <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6 max-w-xl mx-auto" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-[#1e293b] text-white"></textarea>
+      <input type="text" name="_gotcha" style="display:none" />
+      <button type="submit" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">Send Message</button>
+    </form>
+
+    <!-- Success Message (Hidden by Default) -->
+    <p id="form-success" class="mt-6 text-green-400 text-lg font-medium hidden">Thanks! Your message has been sent. ✅</p>
+  </div>
+</section>
+
 
   <script>
     function toggleTheme() {
@@ -191,4 +187,34 @@
     }
   </script>
 </body>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+
+  // Handle Formspree success response
+  const form = document.getElementById("contact-form");
+  const successMessage = document.getElementById("form-success");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      successMessage.classList.remove("hidden");
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  });
+</script>
+
 </html>
