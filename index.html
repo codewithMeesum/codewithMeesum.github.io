@@ -75,12 +75,28 @@
         <a href="#testimonials" class="text-white hover:text-[#6366f1]">Testimonials</a>
         <a href="#contact" class="text-white hover:text-[#6366f1]">Contact</a>
         <button onclick="toggleTheme()" class="text-white text-xl"><i class="ri-sun-line"></i></button>
+        <!-- Mobile Menu Button -->
+<div class="md:hidden">
+  <button onclick="toggleMobileMenu()" class="text-white text-2xl">
+    <i class="ri-menu-line"></i>
+  </button>
+</div>
+
       </div>
     </div>
+    <!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-4 pb-4 bg-[#020617]">
+  <a href="#hero" class="text-white hover:text-[#6366f1]">Home</a>
+  <a href="#skills" class="text-white hover:text-[#6366f1]">Skills</a>
+  <a href="#projects" class="text-white hover:text-[#6366f1]">Projects</a>
+  <a href="#testimonials" class="text-white hover:text-[#6366f1]">Testimonials</a>
+  <a href="#contact" class="text-white hover:text-[#6366f1]">Contact</a>
+</div>
+
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="min-h-screen flex items-center justify-center px-6 pt-32">
+   <section id="hero" class="py-20 md:min-h-screen flex items-center justify-center px-6 pt-32">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div data-aos="fade-up">
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">
@@ -117,7 +133,18 @@
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-bold relative inline-block">Skills</h2>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
+
+        <div class="skill-card" data-aos="zoom-in">
+  <i class="ri-brush-line text-2xl text-[#f59e0b] mb-2"></i>
+  <p>Graphic Designer</p>
+</div>
+
+<div class="skill-card" data-aos="zoom-in">
+  <i class="ri-lightbulb-flash-line text-2xl text-[#14b8a6] mb-2"></i>
+  <p>Prompt Engineer</p>
+</div>
+
         <div class="skill-card" data-aos="zoom-in"><i class="ri-code-box-line text-2xl text-[#6366f1] mb-2"></i><p>C++</p></div>
         <div class="skill-card" data-aos="zoom-in"><i class="ri-terminal-line text-2xl text-[#6366f1] mb-2"></i><p>C</p></div>
         <div class="skill-card" data-aos="zoom-in"><i class="ri-global-line text-2xl text-[#3b82f6] mb-2"></i><p>Web Developer</p></div>
@@ -133,10 +160,13 @@
         <h2 class="text-3xl sm:text-4xl font-bold">Projects</h2>
       </div>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg" data-aos="fade-up">
-          <h3 class="text-xl font-semibold mb-2">AI Assistant App</h3>
-          <p class="text-gray-400">A smart assistant powered by GPT API with voice and text interface.</p>
-        </div>
+       <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg" data-aos="fade-up">
+  <h3 class="text-xl font-semibold mb-2">C++ Currency Converter</h3>
+  <p class="text-gray-400">
+      A C++ project to convert global currencies into PKR.
+  </p>
+</div>
+
         <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg" data-aos="fade-up">
           <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
           <p class="text-gray-400">Built this portfolio using Tailwind CSS with modern UI and effects.</p>
@@ -151,12 +181,12 @@
       <h2 class="text-3xl sm:text-4xl font-bold mb-10">Testimonials</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
-          <p class="text-gray-300 italic">“Mesum is one of the most driven students I’ve ever taught. His passion is inspiring.”</p>
+          <p class="text-gray-300 italic">" Mesum is a passionate learner and a sharp problem solver , truly impressive to teach."</p>
           <p class="text-sm text-gray-500 mt-4">– Instructor</p>
         </div>
         <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
-          <p class="text-gray-300 italic">“A fantastic designer and developer — always delivers more than expected!”</p>
-          <p class="text-sm text-gray-500 mt-4">– Fellow C++ Programmer</p>
+          <p class="text-gray-300 italic">"Mesum always creates more than expected — pure talent!"</p>
+          <p class="text-sm text-gray-500 mt-4">– Team Members</p>
         </div>
       </div>
     </div>
@@ -168,9 +198,12 @@
     <h2 class="text-3xl sm:text-4xl font-bold mb-10">Contact Me</h2>
 
     <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6 max-w-xl mx-auto" id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
-      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-[#1e293b] text-white" />
-      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-[#1e293b] text-white"></textarea>
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
+
+<input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
+
+<textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]"></textarea>
+
       <input type="text" name="_gotcha" style="display:none" />
       <button type="submit" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">Send Message</button>
     </form>
@@ -181,5 +214,25 @@
 </section>
 
 </body>
+<script>
+    
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+<!-- Footer -->
+<footer class="bg-[#0f172a] text-gray-400 py-6 mt-20" >
+  <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+    <p>&copy; 2025 <span class="text-white font-semibold">Mesum Mukhtar</span>. All rights reserved.</p>
+    
+    <p class="flex items-center gap-1 justify-center sm:justify-start mt-2 sm:mt-0">
+      <i class="ri-graduation-cap-line text-white"></i>
+      Proud student of <span class="text-white font-semibold">University of Baltistan</span>, Skardu
+    </p>
+  </div>
+</footer>
+
+
 
 </html>
