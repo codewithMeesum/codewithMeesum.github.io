@@ -55,6 +55,8 @@
       50% { border-color: #6366f1; }
     }
   </style>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </head>
 <body class="min-h-screen" onload="AOS.init()">
   <!-- Navbar -->
@@ -112,7 +114,7 @@
    View My Work
 </a>
 
-         <a href="https://raw.githubusercontent.com/codewithMeesum/codewithMeesum.github.io/main/Resume.pdf" 
+         <a href="https://raw.githubusercontent.com/codewithMeesum/codewithMeesum.github.io/main/RESUME%20(2).pdf" 
    download 
    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 border border-blue-600 transition duration-300">
    Download Resume
@@ -123,13 +125,33 @@
           
         </div>
       </div>
-      <div class="flex justify-center w-full md:w-1/2" data-aos="fade-left">
-        <div class="relative w-40 h-40 xs:w-48 xs:h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-br from-[#6366f1] to-[#a855f7] glow-border mx-auto">
-          <div class="absolute inset-2 bg-[#020617] rounded-full overflow-hidden">
-            <img src="https://i.postimg.cc/g0jMPXtn/Whats-App-Image-2025-07-01-at-14-29-23-73c198ed.jpg" alt="Mesum" class="w-full h-full object-cover object-center rounded-full" />
-          </div>
-        </div>
-      </div>
+     <style>
+  @keyframes borderGlow {
+    0% {
+      box-shadow: 0 0 10px #6366f1, 0 0 20px #a855f7;
+    }
+    50% {
+      box-shadow: 0 0 20px #6366f1, 0 0 35px #a855f7;
+    }
+    100% {
+      box-shadow: 0 0 10px #6366f1, 0 0 20px #a855f7;
+    }
+  }
+
+  .glow-border-animate {
+    animation: borderGlow 3s infinite ease-in-out;
+  }
+</style>
+
+<div class="flex justify-center w-full md:w-1/2" data-aos="fade-left">
+  <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-br from-[#6366f1] to-[#a855f7] glow-border-animate">
+    <div class="absolute inset-2 bg-[#020617] rounded-full overflow-hidden">
+      <img src="https://i.postimg.cc/hPgQmzjF/inkn.png" alt="Mesum" class="w-full h-full object-cover object-center rounded-full" />
+    </div>
+  </div>
+</div>
+
+
     </div>
   </section>
 
