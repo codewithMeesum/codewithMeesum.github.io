@@ -230,21 +230,25 @@
 
     <div class="grid gap-6 md:grid-cols-2">
       
-      <!-- Testimonial 1 -->
-      <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
-        <p class="text-gray-300 italic">
-          “Mesum is a passionate learner and a sharp problem solver, truly impressive to teach.”
-        </p>
-        <p class="text-sm text-gray-500 mt-4">– Instructor</p>
-      </div>
+  <!-- Testimonial 1 -->
+<div class="bg-[#1e293b] p-6 rounded-lg flex flex-col items-center text-center min-h-[180px]" data-aos="flip-left">
+  <p class="text-gray-300 italic">
+    “Mesum is a passionate learner and a sharp problem solver, truly impressive to teach.”
+  </p>
+  <p class="text-sm text-gray-500 mt-4">– Instructor</p>
+</div>
 
-      <!-- Testimonial 2 -->
-      <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
-        <p class="text-gray-300 italic">
-          “Mesum always creates more than expected — pure talent!”
-        </p>
-        <p class="text-sm text-gray-500 mt-4">– Team Members</p>
-      </div>
+<!-- Testimonial 2 -->
+<div class="bg-[#1e293b] p-6 rounded-lg flex flex-col items-center text-center min-h-[180px]" data-aos="flip-left">
+  <p class="text-gray-300 italic">
+    “Mesum always creates more than expected — pure talent!”
+  </p>
+  <p class="text-sm text-gray-500 mt-8">– Team Members</p> <!-- Shifted slightly down -->
+</div>
+
+
+
+
 
       <!-- Testimonial 3 -->
       <div class="bg-[#1e293b] p-6 rounded-lg" data-aos="flip-left">
@@ -336,7 +340,11 @@
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
         <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]"></textarea>
         <input type="text" name="_gotcha" style="display:none" />
-        <button type="submit" class="px-6 py-3 bg-[#6366f1] text-white rounded-md hover:bg-opacity-80">Send Message</button>
+       <button type="submit" 
+  class="px-5 py-2 bg-[#6366f1] text-white rounded-md border border-[#6366f1] hover:bg-white hover:text-[#6366f1] transition duration-300">
+  Send Message
+</button>
+
       </form>
       <p id="form-success" class="mt-6 text-green-400 text-lg font-medium hidden">Thanks! Your message has been sent. ✅</p>
     </div>
