@@ -304,29 +304,26 @@
 <!-- Hidden Testimonial Form -->
 <!-- Hidden Testimonial Form -->
 <!-- Hidden Testimonial Form -->
-<div id="testimonialForm" class="mt-6 max-w-xl mx-auto hidden bg-[#0f172a] p-4 rounded-lg">
- <form action="https://formspree.io/f/xyzjaony" method="POST" class="p-6 rounded-lg shadow-lg">
+ <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6" id="testimonial-form">
+    
+    <input type="text" name="name" placeholder="Your Name" required 
+      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
 
-  <input type="text" name="name" placeholder="Your Name" required 
-         class="w-full mb-4 px-4 py-2 rounded bg-white text-black outline-none">
+    <input type="text" name="title" placeholder="Your Title or Relation" required
+      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
 
-  <input type="text" name="title" placeholder="Your Title or Relation" 
-         class="w-full mb-4 px-4 py-2 rounded bg-white text-black outline-none">
+    <textarea name="testimonial" placeholder="Your Testimonial" rows="5" required 
+      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]"></textarea>
 
-  <textarea name="testimonial" placeholder="Your Testimonial" required 
-            class="w-full h-24 px-4 py-2 rounded bg-white text-black outline-none mb-4"></textarea>
+    <div class="text-center">
+      <button type="submit" 
+  class="px-5 py-2 bg-[#6366f1] text-white rounded-md border border-[#6366f1] hover:bg-white hover:text-[#6366f1] transition duration-300">
+  Submit Testimonial
+</button>
 
-  <div class="text-center">
-    <button type="submit" 
-            class="bg-[#6366f1] text-white px-6 py-2 rounded-md hover:bg-white hover:text-[#6366f1] border border-[#6366f1] transition">
-      Submit Testimonial
-    </button>
-  </div>
-</form>
-
+    </div>
+  </form>
 </div>
-
-
 </section>
 
 <script>
