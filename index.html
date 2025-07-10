@@ -289,6 +289,7 @@
   </div>
 
     <!-- Write a Testimonial Button -->
+<!-- Testimonial Button -->
 <div class="mt-10 text-center">
   <button onclick="toggleTestimonialForm()" 
           class="bg-[#6366f1] text-white px-6 py-2 rounded-md border border-[#6366f1] transition duration-300 hover:bg-white hover:text-[#6366f1]">
@@ -301,29 +302,27 @@
   ✅ Thank you! Your testimonial has been submitted.
 </div>
 
-<!-- Hidden Testimonial Form -->
-<!-- Hidden Testimonial Form -->
-<!-- Hidden Testimonial Form -->
- <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6" id="testimonial-form">
-    
+<!-- Testimonial Form (Initially Hidden + Added Spacing) -->
+<div id="testimonialForm" class="hidden mt-6 max-w-2xl mx-auto bg-[#0f172a] p-6 rounded-lg shadow-lg">
+  <form action="https://formspree.io/f/xyzjaony" method="POST" class="space-y-6">
     <input type="text" name="name" placeholder="Your Name" required 
-      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
+           class="w-full p-3 rounded bg-white text-black outline-none placeholder-gray-500" />
 
-    <input type="text" name="title" placeholder="Your Title or Relation" required
-      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]" />
+    <input type="text" name="title" placeholder="Your Title or Relation" 
+           class="w-full p-3 rounded bg-white text-black outline-none placeholder-gray-500" />
 
-    <textarea name="testimonial" placeholder="Your Testimonial" rows="5" required 
-      class="w-full p-3 rounded bg-white text-[#020617] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]"></textarea>
+    <textarea name="testimonial" placeholder="Your Testimonial" required 
+              class="w-full h-24 p-3 rounded bg-white text-black outline-none placeholder-gray-500"></textarea>
 
     <div class="text-center">
       <button type="submit" 
-  class="px-5 py-2 bg-[#6366f1] text-white rounded-md border border-[#6366f1] hover:bg-white hover:text-[#6366f1] transition duration-300">
-  Submit Testimonial
-</button>
-
+              class="px-5 py-2 bg-[#6366f1] text-white rounded-md border border-[#6366f1] hover:bg-white hover:text-[#6366f1] transition duration-300">
+        Submit Testimonial
+      </button>
     </div>
   </form>
 </div>
+
 </section>
 
 <script>
