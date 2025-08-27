@@ -3,7 +3,9 @@ AI Engineer || C++ Dev || Brand Ambassador @Developer.X
 
 
 ## 🌐 Socials:
-[![Instagram](https://www.instagram.com/mesum_mukhtar?igsh=M2Ewc2J2ZnB6OGpy) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Mesum Mukhtar) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mesummukhtar47@gmail.com) 
+[Instagram](https://www.instagram.com/mesum_mukhtar/?igsh=M2Ewc2J2ZnB6OGpy)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Mesum Mukhtar) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mesummukhtar47@gmail.com) 
 
 # 💼 Mesum's Developer Portfolio
 
