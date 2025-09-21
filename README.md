@@ -1,5 +1,5 @@
 # 💫 About Me:
-AI Engineer || C++ Dev || Brand Ambassador @Developer.X
+AI Engineer || Microsoft Certified || Cisco Certified 
 
 
 ## 🌐 Socials:
